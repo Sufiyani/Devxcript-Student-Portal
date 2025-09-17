@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
@@ -41,15 +40,15 @@ function Sidebar() {
 
   return (
     <>
-      {/* Mobile Menu Toggle Button - FIXED POSITION */}
+      {/* Mobile Menu Toggle Button - ALIGNED WITH HEADER */}
       <button
         onClick={toggleMobileMenu}
-        className="lg:hidden fixed top-4 left-4 z-50 p-2 rounded-lg bg-white shadow-lg border border-gray-200"
+        className="lg:hidden fixed top-3 sm:top-4 md:top-5 lg:top-6 left-3 sm:left-4 md:left-6 lg:left-8 xl:left-10 z-50 p-1 sm:p-2 rounded-lg bg-white shadow-lg border border-gray-200"
       >
         {isMobileMenuOpen ? (
-          <X className="h-6 w-6 text-gray-600" />
+          <X className="h-5 w-5 sm:h-6 sm:w-6 text-gray-600" />
         ) : (
-          <Menu className="h-6 w-6 text-gray-600" />
+          <Menu className="h-5 w-5 sm:h-6 sm:w-6 text-gray-600" />
         )}
       </button>
 

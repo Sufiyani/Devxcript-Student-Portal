@@ -35,7 +35,7 @@ function Login() {
     <div className="min-h-screen bg-white flex items-center justify-center px-4">
       <div className="max-w-md w-full space-y-8">
         <div className="text-center">
-          <h1 className="text-4xl font-bold text-[#5BB7D6] mb-2">Login to DevXcript Portal</h1>
+          <h1 className="text-4xl font-bold text-[#5DB694] mb-2">Login to DevXcript Portal</h1>
           <p className="text-sm text-gray-600">Enter dummy email password to access dashboard</p>
         </div>
 
@@ -107,7 +107,7 @@ function Login() {
                 Keep me logged in
               </label>
             </div>
-            <Link to="/forgot-password" className="text-sm text-blue-600 hover:text-blue-500">
+            <Link to="/forgot-password" className="text-sm text-[#5DB694] hover:text-blue-500">
               Forgot password?
             </Link>
           </div>
@@ -115,7 +115,7 @@ function Login() {
           <button
             type="submit"
             disabled={loading}
-            className="w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-[#5BB7D6] hover:bg-[#2C606F] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed"
+            className="w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-[#5DB694] hover:bg-[#2C606F] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {loading ? 'Signing in...' : 'Sign in'}
           </button>

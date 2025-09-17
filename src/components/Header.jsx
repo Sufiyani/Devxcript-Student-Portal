@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
@@ -23,7 +22,7 @@ function Header() {
   };
 
   const getUserName = () => {
-    return currentUser?.displayName || 'Sufiyan Imran';
+    return currentUser?.displayName || 'User Email';
   };
 
   const getUserEmail = () => {
@@ -35,9 +34,10 @@ function Header() {
       <div className="flex items-center justify-between w-full">
         {/* Left side - Page Title */}
         <div className="flex-1 min-w-0 pr-4">
-          <h2 className="text-xl xs:text-2xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl font-bold text-gray-800 truncate">
+          <h2 className="text-xl xs:text-2xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl font-bold text-gray-800 truncate text-center sm:text-left">
             {getPageTitle()}
           </h2>
+
         </div>
 
         {/* Right side - Notifications and User Profile */}
@@ -58,14 +58,14 @@ function Header() {
               className="w-8 h-8 xs:w-9 xs:h-9 sm:w-10 sm:h-10 md:w-11 md:h-11 lg:w-12 lg:h-12 bg-white border-2 rounded-full flex items-center justify-center hover:shadow-md transition-shadow duration-200 cursor-pointer flex-shrink-0"
               style={{ borderColor: '#66C5A0' }}
             >
-              <span 
-                className="font-semibold text-xs xs:text-xs sm:text-sm md:text-sm lg:text-base select-none" 
+              <span
+                className="font-semibold text-xs xs:text-xs sm:text-sm md:text-sm lg:text-base select-none"
                 style={{ color: '#66C5A0' }}
               >
                 {getUserInitials()}
               </span>
             </div>
-            
+
             {/* User Info - Hidden on very small screens, shown on sm+ */}
             <div className="hidden xs:hidden sm:block min-w-0 flex-1">
               <p className="text-xs sm:text-sm md:text-base lg:text-base font-medium text-gray-900 truncate max-w-24 sm:max-w-32 md:max-w-40 lg:max-w-48">

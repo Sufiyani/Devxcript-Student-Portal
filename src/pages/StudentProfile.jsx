@@ -57,9 +57,9 @@ function StudentProfile() {
     studentId: 'STU2024001',
     program: 'Bachelor of Science in Computer Science',
     year: '3rd Year',
-    gpa: '3.7',
+    gpa: '3.8',
     totalCredits: '89',
-    joinDate: 'September 2022'
+    joinDate: 'July 2024'
   };
 
   return (
